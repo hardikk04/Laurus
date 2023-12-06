@@ -34,3 +34,28 @@ t1.to(".page3,.page4", {
     end: "top 50%",
   },
 });
+
+t1.from(".page6-img>img", {
+  width: "40%",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page6-img>img",
+    // markers: true,
+    scrub: 1,
+    start: "top 90%",
+    end: "top 0%",
+  },
+});
+
+t1.from(".page7-box-elem", {
+  marginTop: "20vw",
+  stagger: 0.2,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page7-box-elem",
+    // markers: true,
+    scrub: 1,
+    start: "top 50%",
+    end: "top -50%",
+  },
+});
